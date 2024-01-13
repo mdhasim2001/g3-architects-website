@@ -208,6 +208,57 @@ main{
     color: #FFF;
 }
 
+/* Some facts section style  */
+
+.some__facts__container{
+    margin-bottom: 20%;
+}
+
+.some__facts__content h3{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--heading);
+}
+
+.some__facts__content p{
+    color: var(--dpara);
+    font-weight: 400;
+    max-width: 500px;
+    margin-top: 20px;
+    line-height: 1.6rem;
+}
+
+.reword{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5%;
+
+}
+
+.reword .card{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    padding: 40px 0;
+    border-radius: 8px;
+
+}
+
+.reword .card h3{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--heading);
+}
+
+.reword .card p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dpara);
+}
+
+
+
 /* Responsiv style start  */
 
 /* for mobail  */
@@ -251,6 +302,17 @@ main{
 
     .experience__container .img__content img{
         width: 80%;
+    }
+
+    .reword{
+        grid-template-columns: 1fr;
+        width: 200px;
+        margin: 30px auto 0;
+
+    }
+
+    .reword .card{
+        margin-bottom: 20px;
     }
     
     
@@ -297,5 +359,13 @@ main{
 
     .experience__container .img__content img{
         width: 80%;
+    }
+
+    .reword{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 420px;
+        margin: 50px auto 0;
+
     }
 }
