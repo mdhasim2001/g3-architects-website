@@ -49,9 +49,13 @@ nav h1{
     color: var(--heading);
 }
 
+nav ul{
+    display: flex;
+}
+
 nav ul li{
-    display: inline;
-    margin-right: 40px;
+    /* display: inline; */
+    margin-right: 30px;
 }
 
 nav a{
@@ -79,4 +83,99 @@ nav a{
 
 .baner__container img{
     width: 100%;
+}
+
+/* Main styel start  */
+main{
+    padding: 0 200px;
+}
+
+/* Future setion style  */
+.future__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+}
+
+.img__content img{
+    width: 100%;
+}
+
+.future__discription{
+    width: 50%;
+    padding: 0 50px;
+}
+
+.future__discription h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--heading);
+}
+
+.future__discription h1 .quick__list{
+    color: var(--dpara);
+    font-weight: 500;
+}
+
+.future__discription h1 .features{
+    color: #FF900E;
+}
+
+.future__discription p{
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+
+/* Responsiv style start  */
+
+/* for mobail  */
+@media screen and (max-width: 576px) {
+    nav, 
+    .future__container
+    {
+        flex-direction: column;
+    }
+
+    header, main, .future__discription{
+        padding: 20px;
+    }
+
+    nav h1{
+        margin-bottom: 20px;
+    }
+
+    nav ul{
+        margin-left: 20px;
+    }
+
+    .img__content, .future__discription{
+        width: 100%;
+    }
+    
+    
+}
+
+/* for tablet */
+@media screen and (min-width: 576px) and (max-width: 940px){
+    nav, 
+    .future__container
+    {
+        flex-direction: column;
+    }
+
+    header, main, .future__discription{
+        padding: 20px;
+    }
+
+    .img__content, .future__discription{
+        width: 100%;
+    }
 }
