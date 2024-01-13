@@ -26,6 +26,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 70px;
+    cursor: pointer;
 }
 
 /* Header style start here  */
@@ -218,6 +219,16 @@ main{
         flex-direction: column;
     }
 
+    .future__container .img__content{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .future__discription{
+        width: 100%;
+        padding: 0;
+        margin-top: 50px;
+    }
     header, main, .future__discription
     .experience__container
     {
@@ -254,12 +265,28 @@ main{
         flex-direction: column;
     }
 
-    header, main, .future__discription{
+    header, main{
         padding: 20px;
     }
 
     nav h1{
         margin-bottom: 20px;
+    }
+
+    .future__container .img__content{
+        /* grid-template-columns: repeat(); */
+        width: 100%;
+    }
+
+    .future__discription{
+        width: 100%;
+        padding: 0;
+        margin-top: 50px;
+    }
+    header, main, .future__discription
+    .experience__container
+    {
+        padding: 20px;
     }
 
     .img__content, .future__discription,
